@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanban Board - Clauses of Service</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1, h2 { text-align: center; }
+        .board { display: flex; justify-content: space-around; padding: 20px; }
+        .column {
+            flex: 1;
+            margin: 0 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .task {
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .legend {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .legend div {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kanban Board with Clauses of Service</h1>
+    <div class="board">
+        <div class="column" id="expedite">
+            <h2>Expedite</h2>
+            <div class="task">🔴 Critical Production Issue</div>
+        </div>
+        <div class="column" id="fixed-date">
+            <h2>Fixed Date</h2>
+            <div class="task">🟠 Release Marketing Video</div>
+        </div>
+        <div class="column" id="standard">
+            <h2>Standard</h2>
+            <div class="task">🟡 Feature Development</div>
+        </div>
+        <div class="column" id="intangible">
+            <h2>Intangible</h2>
+            <div class="task">🔵 Refactor Code</div>
+        </div>
+    </div>
+
+    <div class="legend">
+        <h2>Clauses of Service</h2>
+        <div>🔴 Expedite – Critical, fast-lane items that override WIP</div>
+        <div>🟠 Fixed Date – Time-sensitive work with a hard deadline</div>
+        <div>🟡 Standard – Normal prioritized items, default path</div>
+        <div>🔵 Intangible – Low-urgency, invisible value (e.g. tech debt)</div>
+    </div>
+</body>
+</html>
